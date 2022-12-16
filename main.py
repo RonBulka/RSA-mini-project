@@ -16,10 +16,10 @@ def question2():
     d = number_theory_functions.modular_exponent(7896543, 74365753, phi)
     solution = number_theory_functions.modular_exponent(456456, d, 1000)
     print(solution)
-    """The hundred digit of the number 456456^(7896543^74365753) is 0, we know from euler that 
-       456456^(phi(1000)) mod 1000 = 1, so we want to look at only the relevant exponent which wont turn into 1 after
-       mod 1000, that number is represented by d. So we then check solution = 456456^d mod 1000 and we get 16.
-       is other words the hundred digit is 0."""
+    """The hundred digit of the number 456456^(7896543^74365753) is 0, we know from Euler that 
+       456456^(phi(1000)) mod 1000 = 1, so we want to look at only the relevant exponent which won't turn into 1 after
+       mod 1000, that number is represented by d. So, we then check solution = 456456^d mod 1000 and we get 16.
+       in other words, the hundred digit is 0."""
 
 
 def question3():
@@ -31,8 +31,8 @@ def question3():
     d = number_theory_functions.modular_inverse(e, K)
     m = number_theory_functions.modular_exponent(c, d, N)
     print(m)  # 3023178
-    """The encrypted massage is 42 and the decrypted massage is 3023178, only needed to find the prime factorization 
-       of N and from there just follow the algorithm to decrypt a massage."""
+    """The encrypted massage is 42 and the decrypted message is 3023178, only needed to find the prime factorization 
+       of N and from there just follow the algorithm to decrypt a message."""
 
 
 def question4():
@@ -52,8 +52,8 @@ def question5():
         d = number_theory_functions.modular_inverse(e, K)
     m = 1337
     c = number_theory_functions.modular_exponent(m, e, N)
-    print(f"massage: {m}, public key: {e}, encrypted massage: {c}")
-    """massage: 1337, public key: 6328147487, encrypted massage: 43617655"""
+    print(f"massage: {m}, public key: {e}, encrypted message: {c}")
+    """message: 1337, public key: 6328147487, encrypted massage: 43617655"""
 
 
 if __name__ == '__main__':
